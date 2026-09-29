@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <divnk rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Hotel booking confirmation page</title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Faster+One&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,500&family=Faster+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+   <div id="sidebar-overlay" class="overlay"></div>
+  <div id="layout-container">
+  <!-- Sidebar starts -->
+  <div id="my_sidebar" class="sidebar">
+ <header>
+  <div id="sidebar-top">
+   <img src = "assets\images\logo.svg" class="logo">
+   <div class="cls-btn" type = "button"><img src = "assets\images\icon-close.svg"></div>
+  </div>
+
+ </header>
+   <!-- Guest navigation -->
+<div id="sidebar-main">
+      <div class="nav-item"><img src = "assets\images\icon-bed.svg" class="my-icon">Your stay</div>
+      <div class="nav-item"><img src = "assets\images\icon-house.svg" class="my-icon"> The house</div>
+      <div class="nav-item"><img src = "assets\images\icon-pin.svg" class="my-icon">Around town</div>
+      <div class="nav-item"><img src = "assets\images\icon-breakfast-outline.svg" class="my-icon">Breakfast</div>
+      <div class="nav-item"><img src = "assets\images\icon-mail.svg" class="my-icon">Messages</div>
+</div>
+
+ <!-- Local weather -->
+ 
+<div class="sun-card">
+  <span class="sun-fstLine">Today in Cassis</span><br>
+  <span class="sun-scndLine">27°</span><br>
+  <span class="sun-thirdLine"> Sunny · light breeze</span>
+  <img src = "assets\images\icon-weather.svg" class="sun-weather">
+</div>
+
+<footer>
+  <div class="sidebar-footer">
+   <p> Est. 1987</p>
+  <p>Maison Soleil · 12 Rue des Oliviers ·
+  Cassis</p>
+<p>  © 2026 Maison Soleil </p>
+  </div> 
+</footer>
+</div>
+<!-- Sidebar ends -->
+
+<!-- Main content starts -->
+<div id="main">
+   <header>
+  <div class="header1">
+  <div id="main-top">
+   <img src = "assets\images\logo.svg">
+   <div class="menu" type = "button"><img src = "assets\images\icon-menu.svg"></div>
+  </div>
+<div class="b-c"> Booking · Confirmed</div>
+
+<div class="b-l">
+  <span class="bienvenue">Bienvenue,</span><span class="lucia"> Lucia.</span>
+</div>
+
+<div class="oval">
+<span class="receipt">Print receipt</span>
+<span class="calender">Add to calendar</span>
+</div>
+</div>
+
+<div class="header2"><span>
+<div class="b-c"> Booking · Confirmed</div>
+<span class="bienvenue">Bienvenue,</span><span class="lucia"> Lucia.</span></span>
+<div class="oval">
+<span class="receipt">Print receipt</span>
+<span class="calender">Add to calendar</span></div>
+</div>
+
+ <!-- Booking cards start -->
+
+<div class="mobile-card">
+<div class="welcome-card">
+<div class="welcome">WELCOME CARD</div>
+
+<!-- Note from host card -->
+
+<img src ="assets\images\icon-sun.svg" class = "sun-in-card">
+<div class="note">A note from your host,</div>
+<div class="margaux">Margaux.</div>
+<div class="para1">We're so glad you're coming. The shutters will be open, the lemonade cold, 
+  and the<br> cat - Poivre - pretending not to notice you.</div>
+  <div class="room">ROOM</div>
+  <div class="la-garrigue">La Garrigue</div>
+</div>
+
+<!-- Receipt card -->
+  
+<div class="stay-card">
+
+<div class="receipt2">
+  <div class="receipt-inside">
+   <span> RECEIPT</span>
+   <span>№ MS-2026<br>
+   0421-AH</span>
+  </div>
+  <div class="ur-stay"> Your stay</div>
+</div>
+
+<div class="check">
+<span class="check-in"><span class="check-in-one"> Check in</span><br>
+  <span class="check-in-date">25 Apr</span><br>
+  <span class="check-in-day">Saturday · 15:00</span>
+</span>
+
+<span class="check-out"><span class="check-out-one">Check out</span><br>
+<span class="check-out-date">29 Apr</span><br>
+<span class="check-out-day">Wednesday · 11:00</span>
+</span>
+</div>
+
+<div class="bill">
+ <div class="bill-one"><span> Room·La Garrigue x 4 nights</span> <span> € 620.00</span></div>
+ <div class="bill-two"><span> Breakfastx2 guests</span> <span> € 96.00</span></div>
+ <div class="bill-three"><span> Tourist tax</span> <span> € 14.40</span></div>
+</div>
+
+<div>
+  <div class="paid">
+  <span class="total-paid">Total paid</span>
+  <span class="paid-euro"> € 730.40</span>
+  </div>
+<div class="barcode">
+  <span class="bar-text"> Paid · Wise · GBP</span>
+
+  <!-- Barcode image -->
+
+  <img src = "assets\images\icon-barcode.svg"  class="bar-image">
+</div>
+</div>
+</div>
+</div>
+<!-- Booking cards end -->
+
+ <div class="desktop-card">
+  <!-- for desktop -->
+   <!-- Booking cards start -->
+
+   <!-- Receipt card -->
+  
+<div class="stay-card">
+
+<div class="receipt2">
+  <div class="receipt-inside">
+   <span> RECEIPT</span>
+   <span>№ MS-2026<br>
+   0421-AH</span>
+  </div>
+  <div class="ur-stay"> Your stay</div>
+</div>
+
+<div class="check">
+<span class="check-in"><span class="check-in-one"> Check in</span><br>
+  <span class="check-in-date">25 Apr</span><br>
+  <span class="check-in-day">Saturday·15:00</span>
+</span>
+
+<span class="check-out"><span class="check-out-one">Check out</span><br>
+<span class="check-out-date">29 Apr</span><br>
+<span class="check-out-day">Wednesday·11:00</span>
+</span>
+</div>
+
+<div class="bill">
+ <div class="bill-one"><span> Room·La Garrigue x 4 nights</span> <span> € 620.00</span></div>
+ <div class="bill-two"><span> Breakfastx2 guests</span> <span> € 96.00</span></div>
+ <div class="bill-three"><span> Tourist tax</span> <span> € 14.40</span></div>
+</div>
+
+<div>
+  <div class="paid">
+  <span class="total-paid">Total paid</span>
+  <span class="paid-euro"> € 730.40</span>
+  </div>
+<div class="barcode">
+  <span class="bar-text"> Paid·Wise·GBP</span>
+
+  <!-- Barcode image -->
+
+  <img src = "assets\images\icon-barcode.svg"  class="bar-image">
+</div>
+</div>
+</div>
+<!-- illustration image -->
+<img src = "assets\images\illustration-sun.svg" class="sun-ill">
+
+<div class="welcome-card">
+<div class="welcome">WELCOME CARD</div>
+
+<!-- Note from host card -->
+
+<img src ="assets\images\icon-sun.svg" class = "sun-in-card">
+<div class="note">A note from your host,</div>
+<div class="margaux">Margaux.</div>
+<div class="para1">We're so glad you're coming. The shutters will be open, the lemonade cold, 
+  and the<br> cat - Poivre - pretending not to notice you.</div>
+  <div class="room">ROOM</div>
+  <div class="la-garrigue">La Garrigue</div>
+</div>
+
+</div>
+
+<div class="hover"><img src = "assets\images\icon-sparkle.svg"><span class="htof">Hover To fan</span><img src = "assets\images\icon-sparkle.svg"></div>
+
+<!-- Guest info row starts -->
+<div class="guest-info">
+<div class="arrival-card">
+<!-- Arrival -->
+<div arrival-line><img src = "assets\images\key-solid-full.svg" class="arrival-img"><span class="arrival-text">Arrival</span><span class="arrival-no">01</span></div>
+<div class="check-in-time">Check-in from 15:00</div>
+<div class="arrival-date"> Sat, 25 April</div>
+<p class="para2">Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.</p>
+</div>
+
+<!-- Wifi -->
+
+<div class="wifi-card">
+<div class="wifi-tag"><img src ="assets\images\wifi.png" width = "15px" class="wifi-img"><span class="wifi-text">Wifi</span><span class="wifi-no">02</span></div>
+<div class="guest">Le Soleil · Guest</div>
+<div class="pass-label">Password below</div>
+<div class="wifi-name"><span class="network">Network</span><span class="network-name"> Le Soleil · Guest</span></div>
+<div class="password-line"><span class="pass">Password</span>
+<span><span class="password">soleil-2026</span>
+<button class="copy" onclick="navigator.clipboard.writeText('soleil-2026')">Copy</button>
+</span></div>
+</div>
+
+ <!-- Breakfast -->
+
+<div class="breakfast-card">
+  <div class="breakfast-tag"><img src = "assets\images\icon-breakfast-outline.svg" class = "breakfast-img"><span class="breakfast-text">Breakfast</span><span class="breakfast-no">03</span>
+  </div>
+  <div class="breakfast-time">Served 8-10:30</div>
+  <div class="breakfast-place">on the terrace</div>
+  <p class="para3">  Fresh figs, Marseille honey, pain au levain, 
+    and espresso. Gluten-free option? Leave a note the 
+    night befo re.
+  </p>
+</div>
+</div>
+ <!-- Guest info row ends -->
+</div>
+  <!-- Main content ends -->
+</div>
+<footer class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+  Coded by <a href="#">Akansha</a>.
+   <script src="app.js"></script>
+</footer>
+</body>
+</html>

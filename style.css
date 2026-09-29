@@ -1,0 +1,298 @@
+*{margin-top: 0; padding: 0; }
+#my_sidebar{height: 100vh; width: 100%; margin: 0px; background-color: hsl(40, 60%, 98%); display: flex; flex-direction: column;}
+#my_sidebar.closed{transform: translateX(-100%);}
+
+#sidebar-top{display: flex; padding: 1em; border-bottom: 1px solid hsl(36, 22%, 86%); justify-content: space-between;}
+.cls-btn{border: 1px solid hsl(36, 22%, 86%); width: 1.8em; height: 1.8em; display: grid; place-items: center; border-radius: .2em; cursor: pointer;}
+
+#sidebar-main{padding: .3em;}
+.nav-item{display: flex; align-items: center; margin: .3em; gap: .7em; cursor: pointer; padding: .4em; border-radius: .5em;
+font-family: "Outfit", sans-serif;font-optical-sizing: auto;font-weight: 400;font-style: normal; color: hsl(33, 17%, 41%);}
+.nav-item .my-icon{color: hsl(33, 17%, 41%);}
+.nav-item:hover{background-color: white; color: hsl(33, 15%, 15%);}
+
+.sun-card{width: 100; margin: 20px; border-radius: 20px;background: hsl(44, 84%, 75%);padding: 10px 15px;
+overflow: hidden;position: relative; line-height: 25px; margin-top:11.5em;color: hsl(32, 20%, 29%);}
+.sun-fstLine{text-transform: uppercase;font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal; font-size: 10px;}
+.sun-scndLine{font-size: 2rem; font-family: "Fraunces", serif; font-optical-sizing: auto; font-weight: 400;
+font-style: normal; font-variation-settings: "SOFT" 0,"WONK" 0;color: hsl(33, 15%, 15%);}
+.sun-thirdLine{font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal; font-size: 11px;}
+.sun-weather{position: absolute; right: -8px; top:-30px;}
+
+.sidebar-footer{font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal; font-size: 9px;position: relative;
+margin-top: 7px; padding: 20px; letter-spacing: 1px; line-height: 2em; color: hsl(33, 17%, 41%); text-transform: uppercase;
+border-top: 1.5px dashed hsl(36, 22%, 86%);}
+.attribution { font-size: 0.6875rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width : 767px){
+#my_sidebar{width: 23%;}
+}
+    /* #my_sidebar{display: none;  } */
+
+#main{height: auto;width: 100%; margin: 0; background-color: hsl(40, 60%, 98%); display: flex; flex-direction: column; justify-content: center;align-items: center;}
+#main-top{display: flex; padding: 1em; border-bottom: 1px solid hsl(36, 22%, 86%); justify-content: space-between;}
+.menu{border: 1px solid hsl(36, 22%, 86%); width: 1.8em; height: 1.8em; display: grid; place-items: center; border-radius: .2em; cursor: pointer;}
+.b-c{font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal; font-size: 10px; text-transform: uppercase;
+margin: 10px; letter-spacing: 2px;  color: hsl(33, 17%, 41%);}
+     
+.b-l{margin-left: 10px;} .header2{display: none;}
+.bienvenue{font-size: 2.2rem; font-family: "Fraunces", serif; font-optical-sizing: auto; font-weight: 400;
+font-style: normal; font-variation-settings: "SOFT" 0,"WONK" 0;color: hsl(33, 15%, 15%);}
+.lucia{color: hsl(15, 74%, 41%); font-size: 2.2rem; font-style: italic; font-weight: 550;}
+
+.oval{margin: 5px; padding: 20px; font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 500; font-style: normal; font-size: 11.5px;}
+.receipt{width: 300px; height: auto;padding: 10px 25px; border-radius: 20px; border: 1px solid hsl(36, 22%, 86%); margin-right: 15px;}
+.calender{width: 300px; height: auto; padding: 10px 25px; border-radius: 20px; background: black; color: white;}
+
+.welcome-card{border-radius: 20px; background: hsl(18, 62%, 47%); height: 370px; width: 300px; padding: 20px; margin: 10px;transform: rotate(2deg);
+box-shadow: 0 10px 50px hsl(22, 72%, 56%);} .desktop-card{display: none;}
+.welcome{border-top: 1px dashed hsl(22, 72%, 56%); color: hsl(36, 22%, 86%); font-size: 10px;padding-top: 1.2em; letter-spacing: 1px;
+font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;}
+.sun-in-card{position: relative; left: 250px; top: 0px;}
+.note{font-style: italic; color: hsl(45, 100%, 74%);font-size: 18px;
+font-family: "Fraunces", serif; font-optical-sizing: auto; font-weight: 400;}
+.margaux{color: hsl(0, 0%, 100%); font-size: 2rem;font-style: italic; padding-top: 10px; padding-bottom: 20px;
+font-family: "Fraunces", serif; font-optical-sizing: auto; font-weight: 400;}
+.para1{color: hsl(41, 100%, 93%);font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 200;letter-spacing: -1px;font-size: 13px;}
+.room{color: hsl(36, 22%, 86%); font-size: 10px;padding-top: 1.2em; letter-spacing: 1px; margin-top: 70px;
+font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;}
+.la-garrigue{color: hsl(30, 24%, 93%); font-size: 1.5rem; margin-top: 0.2em;}
+
+.stay-card{border-radius: 20px; background: hsl(40, 60%, 98%); height: 370px; width: 300px; padding: 20px; margin: 10px;transform: rotate(-2deg);
+box-shadow: 0 10px 50px hsl(33, 22%, 20%); margin-top: 20px;}
+.receipt2{border-radius: 0px;border: hsl(33, 17%, 41%);margin: 1px; padding: 0px;}
+.receipt-inside{display: flex; justify-content: space-between;color: hsl(33, 17%, 41%); font-size: 10px; letter-spacing: 1px;
+font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;}
+.ur-stay{font-size: 20px;font-weight:500;letter-spacing: 1px;padding-bottom: 10px;border-bottom: 1px dashed hsl(33, 17%, 41%);}
+
+.check{display: flex; justify-content: space-between;padding: 20px 10px;border-bottom: 1px dashed hsl(33, 17%, 41%);}
+.check-in{color: hsl(33, 17%, 41%); font-size: 10px; letter-spacing: 1px;}
+.check-in-one{text-transform: uppercase; font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;padding-left: 10px;}
+.check-in-date{font-size: 2rem; font-family: "Fraunces", serif; font-optical-sizing: auto; font-weight: 400;
+font-style: normal; font-variation-settings: "SOFT" 0,"WONK" 0;color: hsl(33, 15%, 15%); margin-bottom: 10px;}
+.check-in-day{color: hsl(33, 22%, 20%); font-size: 12px;font-family: sans-serif;}
+.check-out{color: hsl(33, 17%, 41%); font-size: 10px; letter-spacing: 1px;}
+.check-out-one{text-transform: uppercase; font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;padding-left: 10px;}
+.check-out-date{font-size: 2rem; font-family: "Fraunces", serif; font-optical-sizing: auto; font-weight: 400;
+font-style: normal; font-variation-settings: "SOFT" 0,"WONK" 0;color: hsl(33, 15%, 15%);}
+.check-out-day{color: hsl(33, 22%, 20%); font-size: 12px;font-family: sans-serif;}
+
+.bill-one{ font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;font-size: 13px; margin-top: 10px;
+display: flex; justify-content: space-between;color: hsl(33, 22%, 20%);}
+.bill-two{ font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;font-size: 13px; margin-top: 10px;
+display: flex; justify-content: space-between;color: hsl(33, 22%, 20%);}
+.bill-three{ font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;font-size: 13px; margin-top: 10px;
+padding-bottom: 20px; border-bottom: 1px solid black; display: flex; justify-content: space-between;color: hsl(32, 20%, 29%);}
+        
+.total-paid{text-transform: uppercase; font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;font-size: 11px;
+color:hsl(33, 17%, 41%);letter-spacing: 1px;}
+.paid-euro{font-family: "Fraunces", serif; font-optical-sizing: auto; font-weight: 400;font-size: 20px;
+font-style: normal; font-variation-settings: "SOFT" 0,"WONK" 0;}
+.paid{display: flex; justify-content: space-between; margin-top: 15px;}
+.bar-text{font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;font-size: 9px;margin-top: 15px;letter-spacing: 0.5px;}
+.barcode{padding-top: 20px; display: flex; justify-content: center;text-align: center;
+text-transform: uppercase; color: hsl(33, 17%, 41%);}
+.bar-image{margin-left: 100px; padding-top: 10px;}
+
+.arrival-card{background: hsl(0, 0%, 100%); width: 330px; height: 220px; margin-top: 50px;  border: 1px solid hsl(36, 22%, 86%);border-radius: 20px; margin-left: 15px; margin-right: 15px;padding: 10px;}
+.arrival-line{display: flex; justify-content: space-between; text-align: center;}
+.arrival-text{color:hsl(15, 74%, 41%);font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;font-size: 11px;
+text-transform: uppercase; font-weight: 600; align-self: center; letter-spacing: 1px;}
+.arrival-no{color:hsl(15, 74%, 41%); margin-left: 230px; font-weight: 600;font-family: "Fraunces", serif; font-optical-sizing: auto; font-weight: 400;font-size: 20px;
+font-style: normal; font-variation-settings: "SOFT" 0,"WONK" 0;} .arrival-img{width: 15px;}
+.arrival-img{background-color: hsl(44, 84%, 75%);padding: 7px; border-radius: 5px;}
+.check-in-time{margin-top: 30px; color: hsl(33, 15%, 15%);font-family: "Fraunces", serif; font-optical-sizing: auto; font-weight: 400;
+font-style: normal; font-variation-settings: "SOFT" 0,"WONK" 0; font-size: 22px;}
+.arrival-date{ color:hsl(33, 17%, 41%); font-size: 8px; padding: 10px 0;font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;font-size: 11px;}
+.para2{color: hsl(33, 22%, 20%); font-size: 13px; margin: 10px;
+font-family:Arial, Helvetica, sans-serif; font-optical-sizing: auto; font-weight: 400; font-style: normal;font-size: 13px;}
+      
+.wifi-card{background: hsl(0, 0%, 100%); border-radius: 20px; margin: 20px; padding: 10px; width: 330px; height: 220px;
+border: 1px solid hsl(36, 22%, 86%); box-shadow: 0 5px 10px hsl(40, 60%, 98%);}
+.wifi-tag{display: flex; justify-content: space-between; text-align: center;}
+.wifi-text{color:hsl(230, 49%, 56%);font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;font-size: 11px;
+text-transform: uppercase; font-weight: 600; align-self: center; letter-spacing: 2px;}
+.wifi-no{color:hsl(230, 49%, 56%); margin-left: 230px; font-weight: 600;font-family: "Fraunces", serif; font-optical-sizing: auto; font-weight: 400;font-size: 20px;
+font-style: normal; font-variation-settings: "SOFT" 0,"WONK" 0;}
+.wifi-img{background-color: hsl(230, 49%, 56%);padding: 5px; border-radius: 5px;}
+.guest{margin-top: 30px; color: hsl(33, 15%, 15%);font-family: "Fraunces", serif; font-optical-sizing: auto; font-weight: 400;
+font-style: normal; font-variation-settings: "SOFT" 0,"WONK" 0; font-size: 22px;}
+.pass-label{ color:hsl(33, 17%, 41%); font-size: 8px; padding: 10px 0;font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;font-size: 11px;}
+.wifi-name{display: flex; justify-content: space-between; background: hsl(30, 24%, 93%);padding: 5px; border-radius: 5px; align-items: center; margin-top: 5px; padding: 10px;}
+.password-line{display: flex; justify-content: space-between; background: hsl(30, 24%, 93%);padding: 5px; border-radius: 5px; margin-top: 10px; align-items: center;  padding: 10px;}
+.network{font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;font-size: 10px;letter-spacing: 0.5px; text-transform: uppercase;
+letter-spacing: 2px; color: hsl(33, 17%, 41%);}
+.pass{font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;font-size: 10px;letter-spacing: 0.5px; text-transform: uppercase;
+letter-spacing: 2px; color: hsl(33, 17%, 41%);}
+.network-name{font-family: sans-serif, monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;font-size: 10px;letter-spacing: 0.5px; }
+.password{font-family: sans-serif, monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;font-size: 10px;letter-spacing: 0.5px; }
+.copy{width: 40px; border-radius: 10px; border: 0.5px solid hsl(36, 22%, 86%); background: hsl(30, 24%, 93%); font-size: 9px; text-transform: uppercase;padding: 3px; margin: 2px;
+font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;font-size: 8px;margin-top: 15px;letter-spacing: 0.5px; color: hsl(33, 17%, 41%);}
+
+          /* .breakfast-card h4{ font-family: serif; }
+          .bold{ font-family: serif; font-weight:bold; font-size:16px; } */
+
+.breakfast-card{background: hsl(0, 0%, 100%); border-radius: 20px; margin: 20px; padding: 10px; width: 330px; height: 220px;
+border: 1px solid hsl(36, 22%, 86%); box-shadow: 0 5px 10px hsl(40, 60%, 98%);}
+.breakfast-tag{display: flex; justify-content: space-between; text-align: center;}
+.breakfast-time{margin-top: 30px; color: hsl(33, 15%, 15%);font-family: "Fraunces", serif; font-optical-sizing: auto; font-weight: 400;
+font-style: normal; font-variation-settings: "SOFT" 0,"WONK" 0; font-size: 22px;}
+.breakfast-text{color:hsl(340, 48%, 52%);font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;font-size: 11px;
+text-transform: uppercase; font-weight: 600; align-self: center; letter-spacing: 2px;padding-left: 5px;}
+.breakfast-no{color:hsl(340, 48%, 52%); margin-left: 180px; font-weight: 600;font-family: "Fraunces", serif; font-optical-sizing: auto; font-weight: 400;font-size: 20px;
+font-style: normal; font-variation-settings: "SOFT" 0,"WONK" 0;}
+.breakfast-img{background-color: hsl(340, 48%, 52%);padding: 5px; border-radius: 5px; color: hsl(0, 0%, 100%);}
+.breakfast-place{ color:hsl(33, 17%, 41%); font-size: 8px; padding: 10px 0;font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;font-size: 11px;}
+.para3{color: hsl(33, 22%, 20%); font-size: 13px; margin: 10px;
+font-family:Arial, Helvetica, sans-serif; font-optical-sizing: auto; font-weight: 400; font-style: normal;font-size: 13px;}
+
+body {margin: 0;position: relative;overflow-x: hidden; }
+.sidebar {position: fixed;top: 0;left: -400px; width: 250px; height: 100vh; background-color: #fff;  z-index: 999; transition: transform 0.3s ease-in-out; -webkit-overflow-scrolling: touch; }
+
+/* JavaScript */
+.sidebar.active {
+  transform: translateX(400px);
+}
+
+.sidebar-overlay {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  /* height: 100vh; */
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 998;
+  /* display: none; */
+}
+.sidebar-overlay.active {
+  display: block;
+}
+
+/* --- Desktop Styles (Media Query) --- */
+
+@media (min-width: 768px) {
+
+#layout_container{position: static; width: 23%; height: 100vh; position: sticky; top: 0;}
+.menu{display: none !important;}
+  
+#layout-container {display: flex; flex-direction: row; width: 100%;align-items: flex-start;}
+
+#my_sidebar {
+    position: sticky;           /* Locks it to the view frame during downscrolls */
+    transform: none !important; /* Overrides mobile hidden slides */
+}
+
+#my_sidebar{height: 100vh;  width: 15%;border-right: 1px solid hsl(36, 22%, 86%); }
+#my_sidebar.closed{transform: none}
+
+#sidebar-top{ padding: 0.4em;}
+.logo{width: 85px; margin-left: 0.4rem;}
+.cls-btn{ display: none;}
+
+#sidebar-main{padding: 0.4em;}
+.nav-item{margin-left: 0.8em; gap: .4em; padding: .5em; border-radius: .5em; font-size: 13px;}
+.nav-item .my-icon{color: hsl(33, 17%, 41%); width: 18px;}
+
+.sun-card{width: 180px; height: 90px; margin: 15px;padding: 0px 10px;
+line-height: 1.5rem; margin-top:15em; border-radius: 15px;}
+.sun-fstLine{ font-size: 9px;}
+.sun-scndLine{font-size: 1.5rem; }
+.sun-thirdLine{font-size: 9px;}
+.sun-weather{height: 70px; width: 70px;}
+
+.sidebar-footer{font-size: 9px;position: relative;
+margin-top: 2px; padding: 4px; letter-spacing: 1px; margin-left: 10px; line-height: 1.5em;}
+
+#main{display: flex; flex-direction: row; justify-content: flex-start; margin-top: 0px; width: 85%; height: 100vh;}
+.b-c{ font-size: 10px; margin: 0px; letter-spacing: 2px; padding-left: 15px; margin-top: 0px;}
+
+.header1{display: none;}
+.header2{display: flex; flex-direction: row; justify-content: space-between;}
+.bienvenue{font-size: 1.8rem; margin-left: 8px;}
+.lucia{ font-size: 1.8rem;}
+
+.header2 .oval{margin: 5px; padding: 20px; font-size: 11.5px; margin-left: 140px;}
+
+.desktop-card{display: flex; justify-content: center;align-items: center;margin-top: 0px; margin-left: 200px;}
+.welcome-card{border-radius: 15px; height: 300px; width: 270px; padding: 20px; margin: 10px;transform: rotate(2deg);
+box-shadow: 0 5px 10px hsl(22, 72%, 56%);} .mobile-card{display: none;}
+.welcome{font-size: 9px;padding-top: 1.2em; letter-spacing: 1px;}
+.para1{letter-spacing: -0.5px;font-size: 11px;}
+.room{font-size: 10px;padding-top: 1.2em; letter-spacing: 1px; margin-top: 40px;}
+.la-garrigue{font-size: 1.2rem; margin-top: 0.2em;}
+.sun-in-card{position: relative; left: 210px; top: 0px; width: 40px;}
+
+.sun-ill{width: 140px; height: 120px; display:  none;}
+/* .welcome-card{display: none; transform: rotate(-2deg);}
+.stay-card{display: none; transform: rotate(2deg);} */
+.hover{text-align: center;font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400;
+font-style: normal;font-size: 8px; letter-spacing: 1px; text-transform: uppercase; margin-left: 200px;}
+.htof{padding-left: 5px; padding-right: 5px;}
+
+.stay-card{border-radius: 15px; height: 300px; width: 270px; padding: 20px; margin: 10px;transform: rotate(-2deg);
+box-shadow: 0 5px 10px hsl(33, 22%, 20%);}
+.receipt2{border-radius: 0px;border: hsl(33, 17%, 41%);margin: 1px; padding: 0px;}
+.receipt-inside{font-size: 10px; letter-spacing: 1px;}
+.ur-stay{font-size: 18px;font-weight:500;letter-spacing: 1px;padding-bottom: 8px;border-bottom: 1px dashed hsl(33, 17%, 41%);}
+
+.check{padding: 10px 5px;border-bottom: 1px dashed hsl(33, 17%, 41%);}
+.check-in{font-size: 9px; letter-spacing: 1px;}
+.check-in-one{padding-left: 5px;}
+.check-in-date{font-size: 1.5rem; }
+.check-in-day{font-size: 9px;}
+.check-out{font-size: 9px; letter-spacing: 1px;}
+.check-out-one{padding-left: 5px;}
+.check-out-date{font-size: 1.5rem;}
+.check-out-day{font-size: 9px;}
+
+.bill-one{font-size: 11px; margin-top: 8px;}
+.bill-two{font-size: 11px; margin-top: 8px;}
+.bill-three{font-size: 11px; margin-top: 8px;}
+        
+.total-paid{font-size: 11px;letter-spacing: 2px;}
+.paid-euro{font-size: 18px;}
+.paid{margin-top: 6px;}
+.bar-text{font-size: 8px;margin-top: 5px;letter-spacing: 1px; margin-left: 0px;}
+.barcode{padding-top: 5px;}
+.bar-image{margin-left: 110px; padding-top: 5px; width: 80px; }
+
+/* .guest-info{display: flex; flex-direction: row; justify-content: space-evenly; margin-top: 30px;} */
+.guest-info{display: grid; grid-template-columns: repeat(3,1fr);margin-top: 30px; grid-gap :20px}
+
+.arrival-card{width: 320px; height: 160px; margin-left: 20px; margin-right: 20px; border-radius: 20px; padding: 20px;margin-top: 0px;box-shadow: 0 5px 10px hsl(40, 60%, 98%);}
+.arrival-text{font-size: 11px; letter-spacing: 1px; padding-left: 7px;}
+.arrival-no{margin-left: 200px; font-size: 20px;} .arrival-img{width: 15px; height: 11px;}
+.arrival-img{padding: 5px; border-radius: 5px;}
+.check-in-time{margin-top: 10px; font-size: 20px;}
+.arrival-date{font-size: 10px; padding: 10px 0;}
+.para2{color: hsl(33, 22%, 20%); font-size: 13px; margin: 10px;}
+
+.wifi-card{border-radius: 20px;  margin-left: 10px; margin-right: 20px; padding: 20px;  width: 320px; height: 160px; box-shadow: 0 5px 10px hsl(40, 60%, 98%);margin-top: 0px;}
+.wifi-text{font-size: 11px; letter-spacing: 2px;}
+.wifi-no{margin-left: 230px; font-size: 20px;}
+.wifi-img{padding: 5px; border-radius: 5px;}
+.guest{margin-top: 18px;font-size: 20px;}
+.pass-label{font-size: 8px; padding: 6px 0;font-size: 11px;}
+.wifi-name{padding: 7px; border-radius: 5px; align-items: center; margin: 2px;}
+.password-line{padding: 4px; border-radius: 5px; margin-top: 4px; align-items: center;}
+.network{font-size: 10px; text-transform: uppercase;letter-spacing: 2px; }
+.pass{font-size: 10px; text-transform: uppercase;letter-spacing: 2px; }
+.network-name{font-size: 10px;letter-spacing: 0.5px; }
+.password{font-size: 10px;letter-spacing: 0.5px; }
+.copy{width: 30px; border-radius: 10px; border: 0.5px solid hsl(36, 22%, 86%); padding: 3px; margin: 2px;
+font-size: 8px;margin-top: 0px;letter-spacing: 0.5px;}
+ 
+.breakfast-card{border-radius: 20px;  margin-left: 10px; margin-right: 20px; padding: 20px; width: 320px; height: 160px; margin-top: 0px;
+box-shadow: 0 5px 10px hsl(36, 22%, 86%);}
+.breakfast-tag{display: flex; justify-content: space-between; text-align: center;}
+.breakfast-time{margin-top: 18px; color: hsl(33, 15%, 15%); font-size: 20px;}
+.breakfast-text{font-size: 11px; text-transform: uppercase; font-weight: 600; align-self: center; letter-spacing: 2px;padding-left: 5px;}
+.breakfast-no{margin-left: 180px; font-weight: 600;font-size: 20px;}
+.breakfast-img{padding: 5px; border-radius: 5px; }
+.breakfast-place{font-size: 8px; padding: 7px 0;font-size: 11px;}
+.para3{font-size: 13px; margin: 6px;}
+
+
+}
+/* https://github.com/Ak-akansha26/Hotel_Booking_Page.git */
