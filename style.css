@@ -58,7 +58,7 @@ font-family: "Fraunces", serif; font-optical-sizing: auto; font-weight: 400;}
 .room{color: hsl(36, 22%, 86%); font-size: 10px;padding-top: 1.2em; letter-spacing: 1px; margin-top: 70px;
 font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400; font-style: normal;}
 .la-garrigue{color: hsl(30, 24%, 93%); font-size: 1.5rem; margin-top: 0.2em;}
-
+.hover{display: none;}
 .stay-card{border-radius: 20px; background: hsl(40, 60%, 98%); height: 370px; width: 300px; padding: 20px; margin: 10px;transform: rotate(-2deg);
 box-shadow: 0 10px 50px hsl(33, 22%, 20%); margin-top: 20px;}
 .receipt2{border-radius: 0px;border: hsl(33, 17%, 41%);margin: 1px; padding: 0px;}
@@ -150,24 +150,11 @@ font-family:Arial, Helvetica, sans-serif; font-optical-sizing: auto; font-weight
 body {margin: 0;position: relative;overflow-x: hidden; }
 .sidebar {position: fixed;top: 0;left: -400px; width: 250px; height: 100vh; background-color: #fff;  z-index: 999; transition: transform 0.3s ease-in-out; -webkit-overflow-scrolling: touch; }
 
-/* JavaScript */
-.sidebar.active {
-  transform: translateX(400px);
-}
 
-.sidebar-overlay {
-  /* position: fixed; */
-  top: 0;
-  left: 0;
-  width: 100vw;
-  /* height: 100vh; */
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 998;
-  /* display: none; */
-}
-.sidebar-overlay.active {
-  display: block;
-}
+.sidebar.active {transform: translateX(400px);}
+
+.sidebar-overlay {position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.4);z-index: 998;display: none;}
+.sidebar-overlay.active {display: block;}
 
 /* --- Desktop Styles (Media Query) --- */
 
@@ -178,10 +165,7 @@ body {margin: 0;position: relative;overflow-x: hidden; }
   
 #layout-container {display: flex; flex-direction: row; width: 100%;align-items: flex-start;}
 
-#my_sidebar {
-    position: sticky;           /* Locks it to the view frame during downscrolls */
-    transform: none !important; /* Overrides mobile hidden slides */
-}
+#my_sidebar { position: sticky; transform: none !important;}
 
 #my_sidebar{height: 100vh;  width: 15%;border-right: 1px solid hsl(36, 22%, 86%); }
 #my_sidebar.closed{transform: none}
@@ -223,9 +207,9 @@ box-shadow: 0 5px 10px hsl(22, 72%, 56%);} .mobile-card{display: none;}
 .la-garrigue{font-size: 1.2rem; margin-top: 0.2em;}
 .sun-in-card{position: relative; left: 210px; top: 0px; width: 40px;}
 
-.sun-ill{width: 140px; height: 120px; display:  none;}
-/* .welcome-card{display: none; transform: rotate(-2deg);}
-.stay-card{display: none; transform: rotate(2deg);} */
+.desktop-card .sun-ill{width: 140px; height: 120px; display: none;}
+.desktop-card .welcome-card.open{ transform: rotate(-2deg);}
+.desktop-card .stay-card.open{transform: rotate(2deg);}
 .hover{text-align: center;font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400;
 font-style: normal;font-size: 8px; letter-spacing: 1px; text-transform: uppercase; margin-left: 200px;}
 .htof{padding-left: 5px; padding-right: 5px;}
@@ -257,7 +241,6 @@ box-shadow: 0 5px 10px hsl(33, 22%, 20%);}
 .barcode{padding-top: 5px;}
 .bar-image{margin-left: 110px; padding-top: 5px; width: 80px; }
 
-/* .guest-info{display: flex; flex-direction: row; justify-content: space-evenly; margin-top: 30px;} */
 .guest-info{display: grid; grid-template-columns: repeat(3,1fr);margin-top: 30px; grid-gap :20px}
 
 .arrival-card{width: 320px; height: 160px; margin-left: 20px; margin-right: 20px; border-radius: 20px; padding: 20px;margin-top: 0px;box-shadow: 0 5px 10px hsl(40, 60%, 98%);}
@@ -293,6 +276,4 @@ box-shadow: 0 5px 10px hsl(36, 22%, 86%);}
 .breakfast-place{font-size: 8px; padding: 7px 0;font-size: 11px;}
 .para3{font-size: 13px; margin: 6px;}
 
-
 }
-/* https://github.com/Ak-akansha26/Hotel_Booking_Page.git */
