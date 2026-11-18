@@ -9,7 +9,7 @@
 .nav-item{display: flex; align-items: center; margin: .3em; gap: .7em; cursor: pointer; padding: .4em; border-radius: .5em;
 font-family: "Outfit", sans-serif;font-optical-sizing: auto;font-weight: 400;font-style: normal; color: hsl(33, 17%, 41%);}
 .nav-item .my-icon{color: hsl(33, 17%, 41%);}
-.nav-item:hover{background-color: white; color: hsl(33, 15%, 15%);}
+.nav-item:hover{background-color: hsl(0, 0%, 100%); color: hsl(33, 15%, 15%);}
 
 .sun-card{width: 100; margin: 20px; border-radius: 20px;background: hsl(44, 84%, 75%);padding: 10px 15px;
 overflow: hidden;position: relative; line-height: 25px; margin-top:11.5em;color: hsl(32, 20%, 29%);}
@@ -42,8 +42,8 @@ font-style: normal; font-variation-settings: "SOFT" 0,"WONK" 0;color: hsl(33, 15
 .lucia{color: hsl(15, 74%, 41%); font-size: 2.2rem; font-style: italic; font-weight: 550;}
 
 .oval{margin: 5px; padding: 20px; font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 500; font-style: normal; font-size: 11.5px;}
-.receipt{width: 300px; height: auto;padding: 10px 25px; border-radius: 20px; border: 1px solid hsl(36, 22%, 86%); margin-right: 15px;}
-.calender{width: 300px; height: auto; padding: 10px 25px; border-radius: 20px; background: black; color: white;}
+.receipt{width: 300px; height: auto; background: transparent; cursor: pointer; padding: 10px 25px; border-radius: 20px; border: 1px solid hsl(36, 22%, 86%); margin-right: 15px;}
+.calender{width: 300px; height: auto; padding: 10px 25px; border-radius: 20px; background: black; color: white; cursor: pointer;}
 
 .welcome-card{border-radius: 20px; background: hsl(18, 62%, 47%); height: 370px; width: 300px; padding: 20px; margin: 10px;transform: rotate(2deg);
 box-shadow: 0 10px 50px hsl(22, 72%, 56%);} .desktop-card{display: none;}
@@ -200,7 +200,7 @@ margin-top: 2px; padding: 4px; letter-spacing: 1px; margin-left: 10px; line-heig
 
 .desktop-card{display: flex; justify-content: center;align-items: center;margin-top: 0px; margin-left: 200px;}
 .welcome-card{border-radius: 15px; height: 300px; width: 270px; padding: 20px; margin: 10px;transform: rotate(2deg);
-box-shadow: 0 5px 10px hsl(22, 72%, 56%);} .mobile-card{display: none;}
+box-shadow: 0 5px 10px hsl(22, 72%, 56%);} .mobile-card{display: none; cursor: pointer;}
 .welcome{font-size: 9px;padding-top: 1.2em; letter-spacing: 1px;}
 .para1{letter-spacing: -0.5px;font-size: 11px;}
 .room{font-size: 10px;padding-top: 1.2em; letter-spacing: 1px; margin-top: 40px;}
@@ -210,12 +210,12 @@ box-shadow: 0 5px 10px hsl(22, 72%, 56%);} .mobile-card{display: none;}
 .desktop-card .sun-ill{width: 140px; height: 120px; display: none;}
 .desktop-card .welcome-card.open{ transform: rotate(-2deg);}
 .desktop-card .stay-card.open{transform: rotate(2deg);}
-.hover{text-align: center;font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400;
+.desktop-card .hover{text-align: center;font-family: "DM Mono", monospace; font-optical-sizing: auto; font-weight: 400;
 font-style: normal;font-size: 8px; letter-spacing: 1px; text-transform: uppercase; margin-left: 200px;}
 .htof{padding-left: 5px; padding-right: 5px;}
 
 .stay-card{border-radius: 15px; height: 300px; width: 270px; padding: 20px; margin: 10px;transform: rotate(-2deg);
-box-shadow: 0 5px 10px hsl(33, 22%, 20%);}
+box-shadow: 0 5px 10px hsl(33, 22%, 20%); cursor: pointer;}
 .receipt2{border-radius: 0px;border: hsl(33, 17%, 41%);margin: 1px; padding: 0px;}
 .receipt-inside{font-size: 10px; letter-spacing: 1px;}
 .ur-stay{font-size: 18px;font-weight:500;letter-spacing: 1px;padding-bottom: 8px;border-bottom: 1px dashed hsl(33, 17%, 41%);}
@@ -275,5 +275,9 @@ box-shadow: 0 5px 10px hsl(36, 22%, 86%);}
 .breakfast-img{padding: 5px; border-radius: 5px; }
 .breakfast-place{font-size: 8px; padding: 7px 0;font-size: 11px;}
 .para3{font-size: 13px; margin: 6px;}
+
+.calender.active{border: 1px solid brown}
+.receipt.active{border: 1px solid brown;}
+.sidebar .nav-item.active{border: 1px solid brown;background: hsl(0, 0%, 100%); color: hsl(33, 15%, 15%);}
 
 }
